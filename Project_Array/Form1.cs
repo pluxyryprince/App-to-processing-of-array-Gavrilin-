@@ -25,7 +25,7 @@ namespace Project_Array
             Random rand = new Random();
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = rand.Next(-100, 100);
+                array[i] = rand.Next(-200, 200);
                 dataGridView1.Rows[0].Cells[i].Value = array[i];
             }
         }
