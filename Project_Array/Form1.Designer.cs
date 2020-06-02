@@ -28,15 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.rand_array = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sort_button = new System.Windows.Forms.Button();
-            this.grafic_button = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +55,9 @@
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sort_button = new System.Windows.Forms.Button();
+            this.grafic_button = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.clear_button = new System.Windows.Forms.Button();
             this.close_button = new System.Windows.Forms.Button();
             this.quest_button = new System.Windows.Forms.Button();
@@ -66,10 +65,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.form2_button = new System.Windows.Forms.Button();
-            this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             this.SuspendLayout();
             // 
             // rand_array
@@ -117,14 +114,6 @@
             this.Column21,
             this.Column22});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
             this.dataGridView1.Location = new System.Drawing.Point(12, 13);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -134,59 +123,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1027, 92);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // sort_button
-            // 
-            this.sort_button.BackColor = System.Drawing.Color.White;
-            this.sort_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sort_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.sort_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.sort_button.ForeColor = System.Drawing.Color.Black;
-            this.sort_button.Location = new System.Drawing.Point(603, 112);
-            this.sort_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.sort_button.Name = "sort_button";
-            this.sort_button.Size = new System.Drawing.Size(215, 55);
-            this.sort_button.TabIndex = 2;
-            this.sort_button.Text = "Осортировать массив";
-            this.sort_button.UseVisualStyleBackColor = false;
-            this.sort_button.Click += new System.EventHandler(this.sort_button_Click);
-            // 
-            // grafic_button
-            // 
-            this.grafic_button.BackColor = System.Drawing.Color.White;
-            this.grafic_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grafic_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.grafic_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.grafic_button.ForeColor = System.Drawing.Color.Black;
-            this.grafic_button.Location = new System.Drawing.Point(603, 174);
-            this.grafic_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grafic_button.Name = "grafic_button";
-            this.grafic_button.Size = new System.Drawing.Size(215, 55);
-            this.grafic_button.TabIndex = 3;
-            this.grafic_button.Text = "Построение графика";
-            this.grafic_button.UseVisualStyleBackColor = false;
-            this.grafic_button.Click += new System.EventHandler(this.grafic_button_Click);
-            // 
-            // chart1
-            // 
-            this.chart1.BorderlineColor = System.Drawing.Color.Black;
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            this.chart1.Cursor = System.Windows.Forms.Cursors.Default;
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
-            this.chart1.Location = new System.Drawing.Point(12, 112);
-            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
-            this.chart1.Size = new System.Drawing.Size(576, 501);
-            this.chart1.TabIndex = 4;
-            this.chart1.Text = "График элементов массива";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // Column1
             // 
@@ -365,6 +301,59 @@
             this.Column22.ReadOnly = true;
             this.Column22.Width = 125;
             // 
+            // sort_button
+            // 
+            this.sort_button.BackColor = System.Drawing.Color.White;
+            this.sort_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sort_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.sort_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.sort_button.ForeColor = System.Drawing.Color.Black;
+            this.sort_button.Location = new System.Drawing.Point(603, 112);
+            this.sort_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sort_button.Name = "sort_button";
+            this.sort_button.Size = new System.Drawing.Size(215, 55);
+            this.sort_button.TabIndex = 2;
+            this.sort_button.Text = "Осортировать массив";
+            this.sort_button.UseVisualStyleBackColor = false;
+            this.sort_button.Click += new System.EventHandler(this.sort_button_Click);
+            // 
+            // grafic_button
+            // 
+            this.grafic_button.BackColor = System.Drawing.Color.White;
+            this.grafic_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grafic_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grafic_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.grafic_button.ForeColor = System.Drawing.Color.Black;
+            this.grafic_button.Location = new System.Drawing.Point(603, 174);
+            this.grafic_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.grafic_button.Name = "grafic_button";
+            this.grafic_button.Size = new System.Drawing.Size(215, 55);
+            this.grafic_button.TabIndex = 3;
+            this.grafic_button.Text = "Построение графика";
+            this.grafic_button.UseVisualStyleBackColor = false;
+            this.grafic_button.Click += new System.EventHandler(this.grafic_button_Click);
+            // 
+            // chart1
+            // 
+            this.chart1.BorderlineColor = System.Drawing.Color.Black;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Cursor = System.Windows.Forms.Cursors.Default;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(12, 112);
+            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(576, 501);
+            this.chart1.TabIndex = 4;
+            this.chart1.Text = "График элементов массива";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            // 
             // clear_button
             // 
             this.clear_button.BackColor = System.Drawing.Color.White;
@@ -487,7 +476,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -528,7 +516,6 @@
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button form2_button;
-        private System.Diagnostics.PerformanceCounter performanceCounter1;
     }
 }
 
