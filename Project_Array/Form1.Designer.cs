@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.rand_array = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,9 +64,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.form2_button = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // rand_array
@@ -76,7 +80,7 @@
             this.rand_array.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.rand_array.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.rand_array.ForeColor = System.Drawing.Color.Black;
-            this.rand_array.Location = new System.Drawing.Point(824, 112);
+            this.rand_array.Location = new System.Drawing.Point(824, 154);
             this.rand_array.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rand_array.Name = "rand_array";
             this.rand_array.Size = new System.Drawing.Size(215, 55);
@@ -115,7 +119,7 @@
             this.Column22});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 55);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -308,7 +312,7 @@
             this.sort_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sort_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.sort_button.ForeColor = System.Drawing.Color.Black;
-            this.sort_button.Location = new System.Drawing.Point(603, 112);
+            this.sort_button.Location = new System.Drawing.Point(603, 154);
             this.sort_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.sort_button.Name = "sort_button";
             this.sort_button.Size = new System.Drawing.Size(215, 55);
@@ -324,7 +328,7 @@
             this.grafic_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grafic_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.grafic_button.ForeColor = System.Drawing.Color.Black;
-            this.grafic_button.Location = new System.Drawing.Point(603, 174);
+            this.grafic_button.Location = new System.Drawing.Point(603, 216);
             this.grafic_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.grafic_button.Name = "grafic_button";
             this.grafic_button.Size = new System.Drawing.Size(215, 55);
@@ -336,19 +340,19 @@
             // chart1
             // 
             this.chart1.BorderlineColor = System.Drawing.Color.Black;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
             this.chart1.Cursor = System.Windows.Forms.Cursors.Default;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 112);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(12, 154);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(576, 501);
             this.chart1.TabIndex = 4;
             this.chart1.Text = "График элементов массива";
@@ -361,7 +365,7 @@
             this.clear_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.clear_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.clear_button.ForeColor = System.Drawing.Color.Black;
-            this.clear_button.Location = new System.Drawing.Point(824, 174);
+            this.clear_button.Location = new System.Drawing.Point(824, 216);
             this.clear_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.clear_button.Name = "clear_button";
             this.clear_button.Size = new System.Drawing.Size(215, 55);
@@ -377,10 +381,10 @@
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.close_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.close_button.ForeColor = System.Drawing.Color.Black;
-            this.close_button.Location = new System.Drawing.Point(603, 297);
+            this.close_button.Location = new System.Drawing.Point(824, 276);
             this.close_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(436, 55);
+            this.close_button.Size = new System.Drawing.Size(215, 55);
             this.close_button.TabIndex = 6;
             this.close_button.Text = "Выход";
             this.close_button.UseVisualStyleBackColor = false;
@@ -393,7 +397,7 @@
             this.quest_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.quest_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.quest_button.ForeColor = System.Drawing.Color.Black;
-            this.quest_button.Location = new System.Drawing.Point(603, 234);
+            this.quest_button.Location = new System.Drawing.Point(603, 276);
             this.quest_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.quest_button.Name = "quest_button";
             this.quest_button.Size = new System.Drawing.Size(215, 55);
@@ -405,19 +409,20 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(603, 356);
+            this.label1.Location = new System.Drawing.Point(603, 349);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(436, 103);
             this.label1.TabIndex = 8;
             this.label1.Text = "Задание: Найти сумму положительных и сумму отрицательных элементов в массиве Х (2" +
     "2), сформированного случайным образом.\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(599, 459);
+            this.label2.Location = new System.Drawing.Point(603, 452);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(436, 77);
             this.label2.TabIndex = 9;
@@ -428,36 +433,53 @@
             // 
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(599, 536);
+            this.label3.Location = new System.Drawing.Point(603, 529);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(436, 77);
             this.label3.TabIndex = 10;
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // form2_button
+            // menuStrip1
             // 
-            this.form2_button.BackColor = System.Drawing.Color.White;
-            this.form2_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.form2_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.form2_button.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.form2_button.ForeColor = System.Drawing.Color.Black;
-            this.form2_button.Location = new System.Drawing.Point(824, 234);
-            this.form2_button.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.form2_button.Name = "form2_button";
-            this.form2_button.Size = new System.Drawing.Size(215, 55);
-            this.form2_button.TabIndex = 11;
-            this.form2_button.Text = "Перейти на вторую форму";
-            this.form2_button.UseVisualStyleBackColor = false;
-            this.form2_button.Click += new System.EventHandler(this.form2_button_Click);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.справкаToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1051, 28);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // справкаToolStripMenuItem
+            // 
+            this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2});
+            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(236, 24);
+            this.справкаToolStripMenuItem.Text = "Дополнительная информация";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem1.Text = "Справка";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem2.Text = "От разработчика";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1051, 625);
-            this.Controls.Add(this.form2_button);
+            this.ClientSize = new System.Drawing.Size(1051, 668);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -469,14 +491,19 @@
             this.Controls.Add(this.sort_button);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.rand_array);
+            this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Приложение для обработки массива Гаврилин";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -515,7 +542,10 @@
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button form2_button;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
 

@@ -123,9 +123,28 @@ namespace Project_Array
 
         private void form2_button_Click(object sender, EventArgs e)
         {
-          /*  Form1.ActiveForm.Hide();
+        
+        }
+
+       
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form1.ActiveForm.Hide();
+            Form3 frm3 = new Form3();
+            frm3.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form1.ActiveForm.Hide();
             Form2 frm2 = new Form2();
-            frm2.Show();*/
+            frm2.Show();
         }
     }
 }
